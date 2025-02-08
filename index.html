@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniruddha S Kulkarni - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+        }
+        header {
+            background: #007BFF;
+            color: black;
+            padding: 20px;
+            text-align: center;
+	
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: black;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin: 0;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        footer {
+         background: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100vw;  /* Ensures the footer spans the entire viewport width */
+    position: relative; 
+left:-160px;
+margin-top:-200px;
+		
+
+        }
+
+	.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.certificate-card {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 123, 255, 0.6));
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 500px;
+}
+
+.certificate-card h3 {
+    margin: 0 0 10px;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-image {
+    width: 80px;
+    height: 80px;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.certificate-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color:black;
+    width:250px;
+    height : 300px;
+}
+
+.certificate-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+cursor: pointer;
+  height: 2rem;
+width: 2rem
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+	border-color:black;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+        .about-image {
+            float: left;
+            width: 320px;
+            height: 400px;
+            margin-right: 40px;
+            border-radius: 10%;
+           
+	    margin-top: 40px;
+border-color:black;
+        }
+
+
+	.section__text__p1 {
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.section-container {
+  display: flex;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width : 300px;
+  height : 100px;
+}
+
+.details-container1 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width : 300px;
+  height : 100px;
+  position : relative;
+  top : -150px;
+  left : 400px
+}
+
+.details-container2 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width : 300px;
+  height : 100px;
+  position : relative;
+  top : -120px;
+  
+}
+
+
+.details-container3 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width : 300px;
+  height : 100px;
+  position : relative;
+  top : -270px;
+  left : 400px
+}
+
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-2 {
+  background: none;
+  color : black;
+}
+    .btn-color-2:hover {
+        cursor: pointer;
+    }
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+    .btn-color-2:hover {
+        background: rgb(53, 53, 53);
+        color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aniruddha S Kulkarni</h1><br>
+        <marquee>Malnad College of Engineering, Hassan - 573202</marquee><br>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#projects">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#internships">Internships</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#certificates">Certificates</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#contact">Contact</a>
+    </nav>
+	<br><br>
+    <section id="about" class="container">
+
+	<p style = "margin-left: 50px; position : relative; top:40px; left : 30px; color:black">Get to Know more</p>
+        <h1 class="section-title" style = "margin-left: 50px; font-size:50px;">About Me</h1>
+        <img src="C:/Users/ASK/OneDrive/Desktop/Portfolio/photo.jpg" alt="Aniruddha S Kulkarni" class="about-image" style="width = 90px;height = 90px; "><br><br><br>
+         <section id="about" style ="position : relative; left : 50px; top : -50px;">
+      
+      <div class="section-container">
+        <div class="section__pic-container">
+          
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="C:/Users/ASK/OneDrive/Desktop/Portfolio/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3 style = "position : relative; top: -15px">Experience</h3>
+              <p style = "position : relative; top: -33px">3+ years <br />Certified Web Developer</p>
+            </div>
+            <div class="details-container1">
+             
+              <h3 style = "position : relative; top: 8px">UIUX Designer</h3>
+              <p style = "position : relative; top: -10px">2+ years Experience</p>
+            </div>
+
+		
+	    <div class="details-container2">
+             
+              <h3 style = "position : relative; top: -8px">Cloud Computing</h3>
+              <p style = "position : relative; top: -25px">1+ years Experience<br />Certified</p>
+		<br>
+		<p style = "position : relative; top: -70px">Azure Devops</p>
+            </div>
+
+
+	    <div class="details-container3">
+             
+              <h3 style = "position : relative; top: 8px">Machine Learning</h3>
+              <p style = "position : relative; top: -10px">2+ years Experience</p>
+            </div>
+
+         <div class="btn-container" style = "position : relative; top : -250px; left:200px">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./resume.pdf')">
+            Download CV
+          </button>
+          
+         
+      </div>
+      
+    </section>
+
+	
+	
+    <section style = "position : relative; top:-290px">
+        <h3 >Education</h3>
+        <div class="card">
+            <h3>Bachelor of Engineering</h3>
+            <p>Malnad College of Engineering, Hassan</p>
+            <p>December 2021 - Present | CGPA: 8.8</p>
+        </div>
+        <div class="card" >
+            <h3>Pre University</h3>
+            <p>APJ Academy, Gnanadhare PU College, Hassan</p>
+            <p>June 2019 - July 2021 | Percentage: 99.16%</p>
+        </div>
+        <div class="card" >
+            <h3>School</h3>
+            <p>Kendriya Vidyalaya, Hassan</p>
+            <p>April 2009 - March 2019 | Percentage: 90.02%</p>
+        </div>
+	<br>
+        <h3>Skills</h3><br>
+        <div class="skills">
+            <span class="skill">C</span>
+            <span class="skill">C++</span>
+            <span class="skill">Java</span>
+            <span class="skill">Python</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">Cloud Computing (Azure)</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Docker</span>
+        </div>
+    </section>
+
+    <section id="projects" class="container" style="position : relative;top:-250px">
+        <h2 class="section-title">Projects</h2>
+        <div class="card">
+            <h3>Cattle Disease Detection</h3>
+            <p>Using VGG-16 and Inception Model</p>
+        </div>
+        <div class="card">
+            <h3>STAR</h3>
+            <p>Web programming using JavaServer Faces & MySQL</p>
+        </div>
+        <div class="card">
+            <h3>Video Summariser</h3>
+            <p>Using NLP and Speech Recognition Model</p>
+        </div>
+        <div class="card">
+            <h3>Movie Recommendation System</h3>
+            <p>Using R Programming</p>
+        </div>
+        <div class="card">
+            <h3>Mobile Game App</h3>
+            <p>Using MIT App Inventor</p>
+        </div>
+    </section>
+
+    <section id="internships" class="container" style="position : relative;top:-250px">
+        <h2 class="section-title">Internships</h2>
+        <div class="card">
+            <h3><a href="C:/Users/ASK/OneDrive/Desktop/Portfolio/internship1.html">Master Control Facility (MCF) - ISRO</a></h3>
+            <p>Developed a web-based data analysis tool for space debris analysis using NORAD data.</p>
+        </div>
+        <div class="card">
+            <h3><a href="C:/Users/ASK/OneDrive/Desktop/Portfolio/internship3.html">XPMC (Employability.life - Australia)</a></h3>
+            <p>Hands-on training on Cloud Computing using Azure DevOps.</p>
+        </div>
+        <div class="card">
+            <h3><a href="C:/Users/ASK/OneDrive/Desktop/Portfolio/internship2.html">J V Global</a></h3>
+            <p>Developed an e-commerce website and task manager tool as part of full-stack web programming training.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+ <h2 class="section-title" style="position : relative;top:-250px;">Certificates</h2>
+
+
+   <section id="certificates" class="container" style="position : relative;top:-250px;left:-500px">
+   
+    <div class="certificates-grid" >
+        <div class="certificate-card">
+            <img src="./experience.png" alt="Internship Training Program" class="certificate-image" >
+		<br><br>
+
+            <h3>Web Application Development</h3>
+            <p>J V Global</p>
+            <div class="buttons">
+                <a href="C:/Users/ASK/OneDrive/Desktop/Portfolio/internship2.html" class="btn">View</a>
+            </div>
+        </div>
+        <div class="certificate-card">
+            <img src="./experience.png" alt="Internship Training Program" class="certificate-image" >
+		<br><br>
+
+            <h3>SQL - Intermediate</h3>
+            <p>HackerRank</p>
+            <div class="buttons">
+                <a href="C:/Users/ASK/OneDrive/Desktop/Portfolio/sql.html" class="btn">View</a>
+            </div>
+        </div>
+        <div class="certificate-card">
+            <img src="./experience.png" alt="Internship Training Program" class="certificate-image" >
+		<br><br>
+
+            <h3>Python - Basics</h3>
+            <p>HackerRank</p>
+            <div class="buttons">
+                <a href="C:/Users/ASK/OneDrive/Desktop/Portfolio/python.html" class="btn">View</a>
+            </div>
+        </div><br>
+        <div class="certificate-card" style = "position:relative; left:-200px;top:35px;">
+            <img src="./experience.png" alt="Internship Training Program" class="certificate-image" >
+		<br><br>
+
+            <h3>Cloud Computing in Azure DevOps</h3>
+            <p>XPMC</p>
+            <div class="buttons">
+                <a href="C:/Users/ASK/OneDrive/Desktop/Portfolio/internship3.html" class="btn">View</a>
+            </div>
+        </div>
+        <div class="certificate-card" style = "position:relative; left:-180px;top:35px;">
+            <img src="./experience.png" alt="Internship Training Program" class="certificate-image" >
+		<br><br>
+            <h3>Internship Training Program</h3>
+            <p>ISRO - MCF, Hassan</p>
+            <div class="buttons">
+                <a href="C:/Users/ASK/OneDrive/Desktop/Portfolio/internship1.html" class="btn">View</a>
+            </div>
+        </div>
+    </div>
+</section><br><br><br>
+
+    <section id="contact" class="container" style="position : relative;top:-250px" >
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:ani.kulk.hsn@gmail.com">ani.kulk.hsn@gmail.com</a></p>
+        <p>Phone: +91 7975153909</p>
+        <p>Location: Hassan, Karnataka, India</p>
+        <p>LinkedIn: <a href="http://www.linkedin.com/in/ask052003">linkedin.com/in/ask052003</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aniruddha S Kulkarni. All rights reserved.</p>
+    </footer>
+</body>
+</html>
