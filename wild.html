@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Poaching Detection using Machine Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .certificate {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .certificate img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wildlife Poaching Detection using Machine Learning</h1>
+    </header>
+
+    <section>
+        <h2>Project Overview</h2>
+        <p style ="text-align : justify">Wildlife Poaching Detection is a real time poaching detetction initiative, which detects poaching during day and night time as well, and gives Alerts. It was done using <b>YOLO</b> Model. This Project was selected by the KSCST and <b>Karnataka Govt</b> is funding our project.<br><br>
+
+There are 3 majour tasks in this project :
+<ul>
+<li>Human Detection (for both Day and Night Time using YOLO Model)</li>
+<li>Weapon Detection (YOLO Model)</li>
+<li>Animal Classification (YOLO Model, Resnet18 Model, PyTorch)</li>
+</ul>
+
+To make poaching detection real time, we have used the following sensors for Hardware Setup :<br>
+<ul>
+<li>PIR Sensor : For Motion Detection</li>
+<li>ESP32 Cam : For Capturing Photo</li>
+<li>NPN Transister : It acts as a switch, when PIR Sensor detects motion, it instructs Camera to take picture</li>
+<li>Arduino UNO : For Controlling Sensors</li>
+</ul>
+The ESP32 Cam sends the captured photo to the Email via SMTP Protocol, and the device automatically downloads the image attached in the email with the help of imaplib library, and detects for any illegal activity and gives alerts. </p>
+	<br>
+        <h2>Tools Used for the Project</h2>
+        <ul>
+            <li>Python (PyCharm IDE)</li>
+	    <li>CVAT Tool (Annotating Dataset)</li>
+	    <li>Arduino Uno (To control sensors for making the project real time)</li>
+            <li>PIR (Passive Infrared Sensor)</li>
+            <li>ESP32 Cam</li>
+        </ul>
+<br>
+
+	<h2>Hardware Setup</h2>
+	<img src="./hardware.png" style="transform: rotate(90deg); position: relative; top : -100px; left : 150px;" alt="Hardware"/>
+<br><br>
+       <div style = "position : relative; top : -200px;"> <h2>Attachment</h2>
+        <p>You can view the detailed project report <a href="./wildreport.pdf" download>here</a></p>
+    </section></div>
+
+<div style = "position : relative; top : -200px; left:357px;"> <h2>Git Hub Link</h2>
+        <p>You can get the code of this project <a href="https://github.com/ASKCODING123/Wildlife-Poaching-Detection.git" download>here</a></p>
+    </section></div>
+
+    <footer>
+        <p>&copy; 2025 Aniruddha S Kulkarni. All rights reserved.</p>
+    </footer>
+</body>
+</html>
